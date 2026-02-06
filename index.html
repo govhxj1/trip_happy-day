@@ -18,7 +18,7 @@
     .item-title { font-size: 15px; font-weight: 600; margin-bottom: 5px; color: #444; }
     .item a { display: inline-block; font-size: 14px; color: #ff6b81; text-decoration: none; word-break: break-all; border-bottom: 1px solid #ffced6; }
     
-    /* 📸 모바일 최적화 이미지 스타일 */
+    /* 📸 이미지 스타일 (세로 450px 고정) */
     .img-container {
       display: flex;
       flex-direction: column;
@@ -27,12 +27,11 @@
     }
     .item-img-full {
       width: 100%;
-      /* 1번 방식 적용: 세로 크기를 450px로 시원하게 고정 */
-      height: 450px; 
-      object-fit: cover; /* 세로를 늘려도 사진이 찌그러지지 않게 꽉 채움 */
+      height: 450px;       /* 👈 요청하신 대로 세로 크기를 크게 키웠습니다 */
+      object-fit: cover;    /* 👈 이미지가 찌그러지지 않게 꽉 채웁니다 */
       display: block;
       border-radius: 12px;
-      background-color: #f0f0f0;
+      background-color: #fce4ec; /* 로딩 전 배경색 */
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
@@ -72,8 +71,8 @@
         <a href="https://naver.me/5mI5LMtE" target="_blank">https://naver.me/5mI5LMtE</a>
         
         <div class="img-container">
-          <img src="https://github.com/user-attachments/assets/8ec94b32-d829-4c55-88a4-bd704492422d" alt="사진1" class="item-img-full" />
-          <img src="https://github.com/user-attachments/assets/feba7d9e-7ed6-4b5a-b4d7-39f51e1b3cd8" alt="사진2" class="item-img-full" />
+          <img src="wold1.jpg" alt="사진1" class="item-img-full" />
+          <img src="wold2.jpg" alt="사진2" class="item-img-full" />
         </div>
       </div>
       <div class="note">
