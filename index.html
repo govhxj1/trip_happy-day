@@ -4,93 +4,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>우리들의 행복한 시간</title>
   <style>
+    /* ... 기존 스타일 유지 ... */
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-      background: #fff5f7; /* 연한 핑크빛 배경 */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: #fff5f7;
       color: #333;
     }
-
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 30px 20px;
-    }
-
-    h1 {
-      font-size: 22px;
-      text-align: center;
-      margin-bottom: 30px;
-      color: #ff6b81;
-      letter-spacing: -1px;
-    }
-
-    .day {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 20px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 15px rgba(255, 107, 129, 0.1);
-    }
-
-    .day-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 15px;
-      padding-bottom: 10px;
-      border-bottom: 1.5px solid #ffeef0;
-      display: flex;
-      align-items: center;
-    }
-
-    .item {
-      margin-bottom: 15px;
-    }
-
-    .item:last-child {
-      margin-bottom: 0;
-    }
-
-    .item-title {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #444;
-    }
-
-    .item a {
-      display: inline-block;
-      font-size: 14px;
-      color: #ff6b81;
-      text-decoration: none;
-      word-break: break-all;
-      border-bottom: 1px solid #ffced6;
-    }
-
-    .note {
-      margin-top: 15px;
-      font-size: 13px;
-      line-height: 1.6;
-      color: #777;
-      background: #fff9fa;
+    .container { max-width: 500px; margin: 0 auto; padding: 30px 20px; }
+    h1 { font-size: 22px; text-align: center; margin-bottom: 30px; color: #ff6b81; letter-spacing: -1px; }
+    .day { background: #ffffff; border-radius: 20px; padding: 20px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(255, 107, 129, 0.1); }
+    .day-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1.5px solid #ffeef0; display: flex; align-items: center; }
+    .item { margin-bottom: 15px; }
+    .item-title { font-size: 15px; font-weight: 600; margin-bottom: 5px; color: #444; }
+    .item a { display: inline-block; font-size: 14px; color: #ff6b81; text-decoration: none; word-break: break-all; border-bottom: 1px solid #ffced6; }
+    
+    /* 📸 이미지 스타일 추가 */
+    .item-img {
+      width: 100%;
+      height: 180px; /* 고정 높이 */
+      object-fit: cover; /* 비율 유지하며 꽉 채움 */
       border-radius: 12px;
-      padding: 12px;
-      border-left: 3px solid #ff6b81;
+      margin-top: 10px;
+      background: #eee; /* 이미지 로딩 전 배경 */
     }
 
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #bbb;
-      padding: 10px 0 40px;
-    }
-
-    /* 하트 아이콘 스타일 */
-    .heart {
-      color: #ff6b81;
-      margin-right: 5px;
-    }
+    .note { margin-top: 15px; font-size: 13px; line-height: 1.6; color: #777; background: #fff9fa; border-radius: 12px; padding: 12px; border-left: 3px solid #ff6b81; }
+    footer { text-align: center; font-size: 12px; color: #bbb; padding: 10px 0 40px; }
+    .heart { color: #ff6b81; margin-right: 5px; }
   </style>
 </head>
 <body>
@@ -98,52 +39,25 @@
     <h1>💕 두근두근 데이트</h1>
 
     <section class="day">
-      <div class="day-title"><span class="heart">💛</span>토요일 데이트</div>
-
-      <div class="item">
-        <div class="item-title">▶ 숙소 (저스트슬립 호텔)</div>
-        <a href="https://naver.me/예시링크" target="_blank">
-          https://naver.me/xnh1MzBd
-        </a>
-      </div>
-
-      <div class="item">
-        <div class="item-title">▶ 오뎅바 (어묵사랑애)</div>
-        <a href="https://naver.me/예시링크" target="_blank">
-          https://naver.me/FpxlCCJk
-        </a>
-      </div>
-
-      <div class="item">
-        <div class="item-title">▶ 산책</div>
-        <a href="https://naver.me/예시링크" target="_blank">
-          숙소 앞
-        </a>
-      </div>
-      <div class="note">
-        ✨ 이번 데이트도 재밌게 놀자!<br />
-        ✨ 사진 예쁘게 찍어주기 약속
-      </div>
-    </section>
-
-    <section class="day">
       <div class="day-title"><span class="heart">❤️</span>일요일 마무리</div>
 
       <div class="item">
-        <div class="item-title">▶ 오월드/사파리</div>
-        <a href="https://naver.me/예시링크" target="_blank">
-          https://naver.me/5mI5LMtE
-        </a>
-      </div>
+  <div class="item-title">▶ 오월드/사파리</div>
+  <a href="https://naver.me/5mI5LMtE" target="_blank">
+    https://naver.me/5mI5LMtE
+  </a>
+  
+  <img src="https://github.com/user-attachments/assets/8ec94b32-d829-4c55-88a4-bd704492422d" alt="거니" class="item-img" />
+  
+  <img src="https://github.com/user-attachments/assets/feba7d9e-7ed6-4b5a-b4d7-39f51e1b3cd8" alt="싱벙이" class="item-img" />
+</div>
 
       <div class="note">
         🌙 이쁘니랑 이쁜 별도 보러가자
       </div>
     </section>
 
-    <footer>
-      우리들의 소중한 기록
-    </footer>
+    <footer>우리들의 소중한 기록</footer>
   </div>
 </body>
 </html>
