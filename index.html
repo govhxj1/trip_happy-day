@@ -66,25 +66,25 @@
       text-decoration: none;
       word-break: break-all;
       border-bottom: 1px solid #ffced6;
-      margin-bottom: 8px;
     }
 
-    /* 📸 이미지 세로 나열 스타일 (가로로 긴 사진 최적화) */
+    /* 이미지 간격 최적화 */
     .img-container {
       display: flex;
       flex-direction: column;
-      gap: 12px; /* 이미지 사이 간격 */
-      margin-top: 5px;
+      gap: 12px;
+      margin: 10px 0; /* 이미지 위아래 적절한 여백 */
     }
 
     .item-img-full {
       width: 100%;
-      height: auto; /* 비율 유지 */
+      height: auto;
       display: block;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
+    /* 하단 노트 스타일 (기존과 동일하게 고정) */
     .note {
       margin-top: 15px;
       font-size: 13px;
@@ -94,6 +94,7 @@
       border-radius: 12px;
       padding: 12px;
       border-left: 3px solid #ff6b81;
+      clear: both; /* 주변 요소 간섭 방지 */
     }
 
     footer {
@@ -132,8 +133,9 @@
 
       <div class="item">
         <div class="item-title">▶ 산책</div>
-        <span style="font-size:14px; color:#ff6b81;">숙소 앞</span>
+        <span style="font-size:14px; color:#ff6b81; border-bottom: 1px solid #ffced6;">숙소 앞</span>
       </div>
+      
       <div class="note">
         ✨ 이번 데이트도 재밌게 놀자!<br />
         ✨ 사진 예쁘게 찍어주기 약속
@@ -150,8 +152,8 @@
         </a>
         
         <div class="img-container">
-          <img src="https://github.com/user-attachments/assets/8ec94b32-d829-4c55-88a4-bd704492422d" alt="오월드 이미지 1" class="item-img-full" />
-          <img src="https://github.com/user-attachments/assets/feba7d9e-7ed6-4b5a-b4d7-39f51e1b3cd8" alt="오월드 이미지 2" class="item-img-full" />
+          <img src="https://github.com/user-attachments/assets/8ec94b32-d829-4c55-88a4-bd704492422d" alt="사진1" class="item-img-full" />
+          <img src="https://github.com/user-attachments/assets/feba7d9e-7ed6-4b5a-b4d7-39f51e1b3cd8" alt="사진2" class="item-img-full" />
         </div>
       </div>
 
